@@ -163,3 +163,16 @@ footer {
     border-radius: 5px;
 
 }
+
+dl div {
+    display: flex;
+}
+
+dt {
+    padding-right: 10%
+}
+
+dt::after {
+    content: ": ";
+  }
+  
