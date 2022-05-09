@@ -1,31 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5;
+    padding: 3px 3px;
+    color: azure;
+    margin: 0px;
+}
+
 body {
     background-color: rgba(28, 33, 33, 0.901);
-    border: 5px;
-    border-color: aliceblue;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+menu {
+    /*position: fixed;*/
+    /*width: 1100px;*/
+    justify-content: center;
+}
+
+/*menuex {
+    display: flexbox;
+    width: 100%;
+}*/
 
 ul li {
     list-style: none;
     line-height: 20px;
+    display: flex;
 }
 
 h1 {
     background-color: rgb(49, 54, 54);
     color: rgb(84, 224, 43);
     text-shadow: 2px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 
 h2 {
     color: rgb(84, 224, 45);
 }
 
-*{
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5;
-    padding: 3px 3px;
-    color: azure;
-    margin: 0px;
+header {
+    display: flex;
+    justify-content: center;
+    /*padding-top: 100px;*/
+    padding-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-style: double;
+    gap: 30px;
+}
+
+section {
+    max-width: 500px;
+    justify-content:space-around;
+}
+
+article {
+    /*padding-bottom: 30px;*/
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .flexbox1 {
@@ -42,7 +91,7 @@ h2 {
     list-style: none;
     display: flex;
     gap: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .float1 {
@@ -58,13 +107,24 @@ h2 {
     text-decoration: none;
     color: rgb(193, 226, 198);
 }
+
+.button-data:hover{
+    background-color: rgb(178, 190, 169);
+    color: rgb(20, 27, 21);
+    font-weight: bold;
+}
   
 .button-header{
-    background-color: rgb(115, 178, 72);
+    background-color: rgb(126, 227, 82);
     border-radius: 5px;
     text-decoration: none;
     color: black;
-    font-style: bold;
+    font-weight: bolder;
+}
+
+.button-header:hover {
+    background-color: rgb(36, 54, 23);
+    color: rgb(141, 223, 138);
 }
 
 .sprback{
@@ -75,19 +135,22 @@ h2 {
 .border1{
     padding-bottom: 30px;
     border-bottom: 12px;
-    border-color: azure;
 }
 
 .para1 {
-    margin-left: 10px;
+    margin-left: 10px; /*Absatz einrücken*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
 }
 
 #column-left{
-    float: left;
+    width: auto;
 }
 
 #column-right {
-    float: right;
+    display: flex;
+
 }
 
 #bild2 {
@@ -95,3 +158,8 @@ h2 {
     height: 250px;
 }
 
+#sm-img {
+    height:"50px";
+    border-radius: 5px;
+
+}
